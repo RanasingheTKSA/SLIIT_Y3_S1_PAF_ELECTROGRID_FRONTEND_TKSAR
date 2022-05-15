@@ -51,12 +51,12 @@ public class UserServlet extends HttpServlet {
 		// TODO Auto-generated method stub
 
 		String output = userObj.insertUser(
-				request.getParameter("name"), 
-				request.getParameter("nic"), 
-				request.getParameter("address"), 
-				request.getParameter("zipcode"), 
-				request.getParameter("contactnumber"), 
-				request.getParameter("email"));
+				request.getParameter("user_name"), 
+				request.getParameter("user_nic"), 
+				request.getParameter("user_address"), 
+				request.getParameter("user_zip_code"), 
+				request.getParameter("user_contact_number"), 
+				request.getParameter("user_email"));
 		       		        
 		response.getWriter().write(output);
 		doGet(request, response);
